@@ -1,0 +1,25 @@
+﻿Build started 15/02/2015 20:42:24.
+     1>Project "C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\RTP_Lab4.1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\glew-1.10.0\include" /I"C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\freeglut\include" /I"C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\assimp\include" /I"C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\AntTweakBar\AntTweakBar\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Files\Mesh.cpp
+         Mesh.cpp
+     1>c:\vs projects\rtp_lab4.1\rtp_lab4.1\files\mesh.cpp(41): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\vs projects\rtp_lab4.1\rtp_lab4.1\files\mesh.cpp(219): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\VS Projects\RTP_Lab4.1\Debug\RTP_Lab4.1.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\glew-1.10.0\lib\Release\Win32" /LIBPATH:"C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\freeglut\lib" /LIBPATH:"C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\assimp\lib\Release" /LIBPATH:"C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\AntTweakBar\AntTweakBar\lib" assimp.lib glew32.lib freeglut.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\VS Projects\RTP_Lab4.1\Debug\RTP_Lab4.1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\VS Projects\RTP_Lab4.1\Debug\RTP_Lab4.1.lib" /MACHINE:X86 Debug\AABB.obj
+         Debug\BoundingSphere.obj
+         Debug\Camera.obj
+         Debug\CollisionPair.obj
+         Debug\ContactModel.obj
+         Debug\Effector.obj
+         Debug\main.obj
+         Debug\Mesh.obj
+         Debug\RigidBody.obj
+         Debug\RigidBodyManager.obj
+         Debug\Shaders.obj
+         RTP_Lab4.1.vcxproj -> C:\VS Projects\RTP_Lab4.1\Debug\RTP_Lab4.1.exe
+     1>Done Building Project "C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\RTP_Lab4.1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.47

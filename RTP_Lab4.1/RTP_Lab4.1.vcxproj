@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{51B10B70-35A8-4D97-8725-CD9473297B30}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>RTP_Lab41</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\glm-0.9.5.4\glm;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\glm-0.9.5.4\glm;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\glew-1.10.0\include;C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\freeglut\include;C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\assimp\include;C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\AntTweakBar\AntTweakBar\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\glew-1.10.0\lib\Release\Win32;C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\freeglut\lib;C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\assimp\lib\Release;C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\AntTweakBar\AntTweakBar\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp.lib;glew32.lib;freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\glew-1.10.0\include;C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\freeglut\include;C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\assimp\include;C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\AntTweakBar\AntTweakBar\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\glew-1.10.0\lib\Release\Win32;C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\freeglut\lib;C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\assimp\lib\Release;C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\AntTweakBar\AntTweakBar\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp.lib;glew32.lib;freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Files\AABB.h" />
+    <ClInclude Include="Files\BoundingSphere.h" />
+    <ClInclude Include="Files\Camera.h" />
+    <ClInclude Include="Files\CollisionPair.h" />
+    <ClInclude Include="Files\ContactModel.h" />
+    <ClInclude Include="Files\Effector.h" />
+    <ClInclude Include="Files\Mesh.h" />
+    <ClInclude Include="Files\RigidBody.h" />
+    <ClInclude Include="Files\RigidBodyManager.h" />
+    <ClInclude Include="Files\Shaders.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Files\AABB.cpp" />
+    <ClCompile Include="Files\BoundingSphere.cpp" />
+    <ClCompile Include="Files\Camera.cpp" />
+    <ClCompile Include="Files\CollisionPair.cpp" />
+    <ClCompile Include="Files\ContactModel.cpp" />
+    <ClCompile Include="Files\Effector.cpp" />
+    <ClCompile Include="Files\main.cpp" />
+    <ClCompile Include="Files\Mesh.cpp" />
+    <ClCompile Include="Files\RigidBody.cpp" />
+    <ClCompile Include="Files\RigidBodyManager.cpp" />
+    <ClCompile Include="Files\Shaders.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Shaders\lineFragmentShader.txt" />
+    <Text Include="..\Shaders\lineVertexShader.txt" />
+    <Text Include="..\Shaders\noTextureFragmentShader.txt" />
+    <Text Include="..\Shaders\noTextureVertexShader.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
