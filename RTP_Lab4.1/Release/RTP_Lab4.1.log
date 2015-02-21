@@ -1,14 +1,14 @@
-﻿Build started 16/02/2015 13:55:30.
+﻿Build started 21/02/2015 19:39:27.
      1>Project "C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\RTP_Lab4.1.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\glew-1.10.0\include" /I"C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\freeglut\include" /I"C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\assimp\include" /I"C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\AntTweakBar\AntTweakBar\include" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Files\main.cpp
          main.cpp
-     1>Files\main.cpp(172): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
-     1>Files\main.cpp(173): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
-     1>Files\main.cpp(248): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
-     1>Files\main.cpp(249): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
-     1>Files\main.cpp(395): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
-     1>Files\main.cpp(397): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>Files\main.cpp(174): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>Files\main.cpp(175): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>Files\main.cpp(252): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>Files\main.cpp(253): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>Files\main.cpp(399): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>Files\main.cpp(401): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
          GLM: perspective function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\VS Projects\RTP_Lab4.1\Release\RTP_Lab4.1.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\glew-1.10.0\lib\Release\Win32" /LIBPATH:"C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\freeglut\lib" /LIBPATH:"C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\assimp\lib\Release" /LIBPATH:"C:\VS Projects\RTP_Lab4.1\RTP_Lab4.1\AntTweakBar\AntTweakBar\lib" assimp.lib glew32.lib freeglut.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\VS Projects\RTP_Lab4.1\Release\RTP_Lab4.1.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\VS Projects\RTP_Lab4.1\Release\RTP_Lab4.1.lib" /MACHINE:X86 /SAFESEH Release\AABB.obj
@@ -29,4 +29,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.12
+Time Elapsed 00:00:02.11

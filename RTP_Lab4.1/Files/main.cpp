@@ -71,6 +71,8 @@ float fps = 0.0f;
 Shaders noTex_shader("noTexture", V_SHADER_NOTEXTURE, F_SHADER_NOTEXTURE);
 Shaders line_shader("Line", V_SHADER_LINE, F_SHADER_LINE);
 
+bool draw_broad_phase = true;
+
 #pragma region SHADER_FUNCTIONS
 
 // Create a NULL-terminated string by reading the provided file
@@ -217,7 +219,9 @@ void init_tweak()
 	TwBar *bar;
 	bar = TwNewBar("Rigid Body");
 
+	
 	TwAddVarRO(bar, "FPS", TW_TYPE_FLOAT, &fps, "");
+	TwAddVarRW(bar, "Draw Boxes", TW_TYPE_BOOLCPP, &draw_broad_phase, "");
 	TwAddButton(bar, "Move", vels, NULL, "");
 	bodies.addTBar(bar);
 	TwAddButton(bar, "Reset", reset, NULL, "");
@@ -358,8 +362,8 @@ void display()
 	glUniformMatrix4fv (new_proj_mat_location, 1, GL_FALSE, glm::value_ptr(proj_mat));
 	glUniformMatrix4fv (new_view_mat_location, 1, GL_FALSE, glm::value_ptr(view_mat));
 
-
-	bodies.drawCollisionBoxes(line_shader.id);
+	if(draw_broad_phase)
+		bodies.drawCollisionBoxes(line_shader.id);
 
 	glm::mat4 mat;
 	int model_matrix_location = glGetUniformLocation (line_shader.id, "model");
